@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'aspace';
+    src: url('fontes/A-Space\ Regular\ Demo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'spaceage';
+    src: url('fontes/space\ age.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #8EACBF;
+    --cor1: #4C6C73;
+    --cor2: #183940;
+    --cor3: #0B1C26;
+    --cor4: #0B1726;
+    --fonte0: 'aspace', helvetica, sans-serif;
+    --fonte1: 'spaceage', helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('imagens/universo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+header {
+    background-color:var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    margin: auto;
+    padding: 0px;
+    border-radius: 15px 15px 0px 0px;
+    max-width: 75%;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.541);
+}
+
+#principal {
+    font-family: var(--fonte1);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.37);
+    font-size:215%;
+}
+
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.37);
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 5px 0px;
+    margin: auto;
+    max-width: 75%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.541);
+}
+
+nav a {
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 3px 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border-radius: 7px;
+}
+
+main {
+    background-color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    max-width: 75%;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.541);
+}
+
+main .titulos {
+    background-color:var(--cor4);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    color: white;
+    font-weight: 500;
+    font-family: var(--fonte0);
+    padding-left: 10px;
+}
+
+p.texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    line-height: 2em;
+    text-indent: 20px;
+    text-align: center;
+}
+
+p.textoveja {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 20px 0px 10px 15px;
+}
+
+main .imagem {
+    display: block;
+    margin: auto;
+    max-width: 98%;
+    border-radius: 7px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left:12%;
+    width: 75%;
+    height: 85%;
+}
+
+aside {
+    background-color: var(--cor4);
+    margin: auto;
+    padding: 10px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0px 0px 15px 15px;
+    max-width: 100%;
+}
+
+aside > p {
+    color: var(--cor0);
+    text-align: center;
+    font-size:150%;
+}
+
+aside > ul > li {
+    list-style-position: inside;
+}
+
+aside > ul > li > a {
+    color:var(--cor1);
+    text-decoration: none;
+}
+
+aside > ul > li > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+footer {
+    background-color: var(--cor4);  
+}
+
+footer p {
+    color: var(--cor1);
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor0) ;
+}
+
+footer > p > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    border-radius: 7px;
+    padding: 3px;
+}
