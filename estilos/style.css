@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'aspace';
+    src: url('../fontes/A-Space\ Regular\ Demo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'spaceage';
+    src: url('../fontes/space\ age.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #8EACBF;
+    --cor1: #4C6C73;
+    --cor2: #183940;
+    --cor3: #0B1C26;
+    --cor4: #0B1726;
+    --fonte0: 'aspace', helvetica, sans-serif;
+    --fonte1: 'spaceage', helvetica, sans-serif;
+    --fonte2:  Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-image: url('../imagens/universo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+}
+
+header {
+    background-color:var(--cor0);
+    color: var(--cor4);
+    margin: auto;
+    padding: 30px 0px;
+    max-width: 75vw;
+    text-align: center;
+}
+
+header #principal {
+    font-family:var(--fonte1);
+}
+
+nav {
+    background-color: var(--cor0);
+    margin: auto;
+    max-width: 75vw;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+main {
+    background-color: var(--cor0);
+    margin: auto;
+    max-width: 75vw;
+}
+
+footer {
+    background-color: var(--cor4);
+}
